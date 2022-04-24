@@ -1,0 +1,311 @@
+:root {
+    --sidebar-blue: #054276;
+    --white: #fff;
+    --ghost: #41739f;
+    --text-black: #282828;
+    --text-blue: #265a87;
+    --sidebar-dark-blue: #08345d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.4rem;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.page {
+    display: flex;
+    min-height: 100vh;
+    box-shadow: 0 0 5px black;
+}
+
+.portfolio__sidebar {
+    flex-basis: 30%;
+    background-color: var(--sidebar-blue);
+}
+
+.portfolio__body {
+    flex-basis: 70%;
+}
+
+/* List */
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list__item > img {
+    width: 15px;
+    height: 15px;
+}
+
+.list--row {
+    display: flex;
+}
+
+.list__item {
+
+}
+
+/* Sidebar */
+
+.sidebar {
+
+}
+
+.sidebar__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.sidebar__photo img {
+    height: 130px;
+    width: 100px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 5px black;
+}
+
+.sidebar__block {
+
+}
+
+.sidebar__block-heading {
+    color: var(--white);
+    padding: 8px 20px;
+    background-color: var(--sidebar-dark-blue);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.sidebar__block-content {
+    padding: 8px 20px 40px;
+    color: white;
+}
+
+.sidebar__block-content a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* Contacts */
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+/* Language */
+
+.language {
+    display: flex;
+    justify-content: space-between;
+}
+
+.language__progress-circle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: var(--ghost);
+    border-radius: 50%;
+}
+
+.progress-circle--active {
+    background-color: var(--white);
+}
+
+/* Skill */
+
+.skill {
+    display: flex;
+    gap: 8px;
+}
+
+.skill__info {
+    flex-grow: 1;
+}
+
+.skill__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--white);
+    margin-top: 8px;
+}
+
+.skill__name {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.skill__progress {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.skill__progress-line {
+    width: 100%;
+    height: 3px;
+    background-color: var(--ghost);
+    position: relative;
+}
+
+.skill__progress-line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--white);
+}
+
+.skill__progress-line--25::after {
+    width: 25%;
+}
+
+.skill__progress-line--50::after {
+    width: 50%;
+}
+
+.skill__progress-line--75::after {
+    width: 75%;
+}
+
+.skill__progress-line--100::after {
+    width: 100%;
+}
+
+.skill__progress-name {
+    align-self: flex-end;
+    font-size: 10px;
+}
+
+/* Portfolio Body */
+
+.portfolio__body {
+    padding: 20px;
+}
+
+.portfolio__title {
+    margin-bottom: 20px;
+}
+
+.portfolio__additional-list {
+    gap: 10px;
+}
+
+.portfolio__additional-list img {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+}
+
+.portfolio__additional-list .list__item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+/* Information block */
+
+.information-block {
+
+}
+
+.information-block__head {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.information-block__title {
+    color: var(--text-blue);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.information-block__line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--text-blue);
+}
+
+.information-block__icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--text-blue);
+    overflow: hidden;
+    padding: 6px;
+}
+
+.information-block__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Timeline */
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.timeline__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline__info {
+    max-width: 300px;
+    width: 100%;
+}
+
+.timeline__text {
+    font-weight: 700;
+}
+
+.timeline span {
+    font-weight: 400;
+}
+
+.timeline i {
+    font-weight: 400;
+}

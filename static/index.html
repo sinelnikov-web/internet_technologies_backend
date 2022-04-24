@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<main class="portfolio">
+    <div class="container-md mx-auto row justify-content-center">
+        <div class="page px-0 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-12 row">
+            <aside class="portfolio__sidebar sidebar col-4">
+                <div class="sidebar__photo">
+                    <img class="img-fluid" src="http://placehold.it/250x250" alt="">
+                </div>
+                <div class="sidebar__block">
+                    <h2 class="sidebar__block-heading">Контакты</h2>
+                    <div class="sidebar__block-content">
+                        <ul class="list contacts">
+                            <li class="list__item contacts__item">
+                                <img src="./assets/images/phone-svgrepo-com.svg" alt="">
+                                <a href="tel:+77052798196" id="phone"></a>
+                            </li>
+                            <li class="list__item contacts__item">
+                                <img src="./assets/images/mail-svgrepo-com%20(1).svg" alt="">
+                                <a href="mailto:sinelnikov-web@mail.ru" id="email"></a>
+                            </li>
+                            <li class="list__item contacts__item">
+                                <img src="./assets/images/github-svgrepo-com.svg" alt="">
+                                <a href="#" id="github"></a>
+                            </li>
+                            <li class="list__item contacts__item">
+                                <img src="./assets/images/instagram-svgrepo-com.svg" alt="">
+                                <a href="#" id="instagram"></a>
+                            </li>
+                            <li class="list__item contacts__item">
+                                <img src="./assets/images/vk-svgrepo-com.svg" alt="">
+                                <a href="#" id="vk"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar__block">
+                    <h2 class="sidebar__block-heading">Языки</h2>
+                    <div class="sidebar__block-content">
+                        <ul class="list">
+                            <li class="list__item">
+                                <div class="language row gy-2">
+                                    <span class="language__name col-md-12 col-lg-4 col-md-4 col-12">Английский</span>
+                                    <div class="language__level col-md- 12 col-lg-8 col-md-8 col-12">
+                                        <div class="language__progress">
+                                            <div class="language__progress-circle progress-circle--active"></div>
+                                            <div class="language__progress-circle progress-circle--active"></div>
+                                            <div class="language__progress-circle progress-circle--active"></div>
+                                            <div class="language__progress-circle"></div>
+                                            <div class="language__progress-circle"></div>
+                                        </div>
+                                        <div class="language__progress-name">
+                                            B1 - Средний
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar__block">
+                    <h2 class="sidebar__block-heading">Навыки</h2>
+                    <div class="sidebar__block-content">
+                        <ul class="list">
+                            <li class="list__item">
+                                <div class="skill">
+                                    <div class="skill__dot"></div>
+                                    <div class="skill__info">
+                                        <span class="skill__name">JavaScript</span>
+                                        <div class="skill__progress">
+                                            <div class="skill__progress-line skill__progress-line--75"></div>
+                                            <span class="skill__progress-name">Опытный</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list__item">
+                                <div class="skill">
+                                    <div class="skill__dot"></div>
+                                    <div class="skill__info">
+                                        <span class="skill__name">HTML5</span>
+                                        <div class="skill__progress">
+                                            <div class="skill__progress-line skill__progress-line--75"></div>
+                                            <span class="skill__progress-name">Опытный</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <div class="portfolio__body col-8">
+                <h1 class="portfolio__title" id="name">Синельников Максим Александрович</h1>
+                <div class="portfolio__additional-info">
+                    <ul class="list list--row portfolio__additional-list">
+                        <li class="list__item">
+                            <img src="./assets/images/location-svgrepo-com.svg" alt="">
+                            <p class="portfolio__additional-text" id="city">
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <img src="./assets/images/information-svgrepo-com.svg" alt="">
+                            <p class="portfolio__additional-text">
+                                Возраст: 20 лет
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="portfolio__information-block information-block">
+                    <div class="information-block__head">
+                        <h2 class="information-block__title">Образование</h2>
+                        <div class="information-block__line"></div>
+                        <div class="information-block__icon">
+                            <img src="./assets/images/education-svgrepo-com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="information-block__content">
+                        <ul class="list timeline">
+                            <li class="list__item timeline__item row">
+                                <span class="timeline__date col-2">2020</span>
+                                <div class="timeline__info col-10">
+                                    <p class="timeline__text">
+                                        КГУ средняя школа №11 г.Алтай: <span>Среднее</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="list__item timeline__item row">
+                                <span class="timeline__date col-2">2024</span>
+                                <div class="timeline__info col-10">
+                                    <p class="timeline__text">
+                                        Восточно-Казахстанский технический университет им. Серикбаева: <span>Бакалавр</span><br>
+                                        <i>Школа информационных технологий и интеллектуальных систем, Вычислительная техника и программное обеспечение</i>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="portfolio__information-block information-block">
+                    <div class="information-block__head">
+                        <h2 class="information-block__title">Курсы</h2>
+                        <div class="information-block__line"></div>
+                        <div class="information-block__icon">
+                            <img src="./assets/images/file-svgrepo-com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="information-block__content">
+                        <ul class="list timeline" id="courses">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
